@@ -44,3 +44,27 @@ for(let count = 1; count < 10; count++){
         console.log('Even Number', count);
     }
 }
+
+
+
+//testing resistor color duo
+const decodeArray = ['black', 'brown', 'red', 'orange', 'yellow',
+ 'green', 'blue', 'violet', 'grey', 'white'];
+
+ let code1 = 0;
+ let code2 = 0;
+
+const decodedValue = (color1, color2) => {
+
+    for(let i = 0; i < decodeArray.length; i++){
+      if(color1 == decodeArray[i]){
+          code1 = i;
+      }
+      if(color2 == decodeArray[i]){
+          code2 = i;
+      }
+    }
+    return "" +code1 +code2;
+};
+
+console.log(decodedValue('brown', 'black'));

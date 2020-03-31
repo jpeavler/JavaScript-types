@@ -18,6 +18,8 @@ console.log('constant equals', constant)
 //variables with 'let can change
 let time = new Date();
 console.log('First time', time);
+// Exposing the 'typeof' on time
+console.log('Type Of first time: ', typeof time);
 //'let' can be reassigned a new value, that value is an object
 time = {date: new Date()}
 console.log('Second time', time)
@@ -27,9 +29,9 @@ console.log('Date of time', time.date);
 //BLOCK SCOPE Walkthrough and Examples
 
 {
-    var exposed = 'Hi'
-    let hidden = 'Good bye'
-    console.log(hidden) //will print since hidden is within the scope.
+    var exposed = 'Hi';
+    let hidden = 'Good bye';
+    console.log(hidden); //will print since hidden is within the scope.
 }
 console.log(exposed);
 // console.log(hidden); At this scope, hidden is not defined

@@ -45,3 +45,17 @@ console.log("Array after push: ", shiftArray);
 // Using .join() to printout the contents of an array as a sentence.
 const storyArray = ["Once", "upon", "a", "time"];
 console.log("Story Array content using .join(): ", storyArray.join(" "));
+
+let input = "James";
+let nameArray = input.split("");
+console.log(nameArray, nameArray.length);
+
+//flip the order of an array
+let numberLine = "12345";
+let flipArray = numberLine.split(' ');
+console.log(flipArray.reverse());
+
+// Combining two Arrays
+const academics =["Mike", "Wes"];
+const fullClass = myArray.concat(academics);
+console.log(fullClass);
